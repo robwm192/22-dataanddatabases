@@ -215,8 +215,17 @@ AWS Aurora
 Google BigTable
 Amazon Redshift
 
-
-
-
-
 ---
+
+# Exercise 
+
+In groups of 3 or 4 write a 15 minute talk about your given database that you can give to the rest of the group next week.  This must include the following
+
+* Some background to the database system
+* Overview of the design and architecture of the system
+* Where does it fall in the CAP model, Why?
+* Describe some use cases of the database
+* Pros and Cons of the database
+* Anything else interesting. 
+
+
