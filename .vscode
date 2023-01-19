@@ -1,0 +1,5 @@
+{
+    "markdown.marp.themes": [
+        "thg-accelerator-theme/theme.css"
+    ]
+}
