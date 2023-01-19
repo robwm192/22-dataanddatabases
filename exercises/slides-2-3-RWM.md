@@ -5,12 +5,30 @@ theme: thg-accelerator
 
 ![width:800px](accelerator-logo.svg)
 
-# Discovering Data
+# SQLite
+
+### Ines Cortina, Aarjav Jain, and Rob Woodward-Massey
+
+![width:100px](img/sqlite-tutorial-homepage.svg)
 
 ---
 
-What is data?
+# SQLite
 
-![width:800px](../lecture-1-discovering-data/img/what-is-data.png)
+### Design and Architecture Overview
+
+- "SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine"
+- Test
+- Test 2
+
+---
+
+# SQLite
+
+### Where does it fall on the CAP model?
+
+- 1
+- 2
+- etc
 
 ---

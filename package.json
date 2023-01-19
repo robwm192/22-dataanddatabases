@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "consolidate": "^0.16.0",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.3.0",
+    "gulp-front-matter": "^1.3.0",
+    "gulp-layout": "^0.0.4",
+    "gulp-remarkable": "^2.1.0",
+    "jade": "^0.29.0",
+    "node": "^19.4.0"
+  },
+  "name": "22-dataanddatabases",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/THG-accelerator/22-dataanddatabases.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/THG-accelerator/22-dataanddatabases/issues"
+  },
+  "homepage": "https://github.com/THG-accelerator/22-dataanddatabases#readme",
+  "description": "",
+    "overrides": {
+      "graceful-fs": "^4.2.10"
+    }
+}

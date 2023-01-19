@@ -1,0 +1,1 @@
+https://communary.net/2016/05/23/automatically-convert-markdown-to-html-in-visual-studio-code-with-syntax-highlighting/
