@@ -1,4 +1,4 @@
 {
-  "markdown.marp.themes": ["thg-accelerator-theme/theme.css"],
+  "markdown.styles": ["theme.css"],
   "markdown-pdf.convertOnSave": true
 }
