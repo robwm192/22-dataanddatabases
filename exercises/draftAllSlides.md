@@ -11,11 +11,7 @@ style: |
   }
 ---
 
-![width:800px](img/accelerator-logo.svg)
-
 # SQLite
-
-## _ ***[ alt intro page ]*** _
 
 ### Ines Cortina, Aarjav Jain, and Rob Woodward-Massey
 
@@ -23,6 +19,73 @@ style: |
 <img src="img/sqlite-tutorial-homepage.svg" height="180rem" style="display:flex; text-align:center; margin:auto">
 
 ---
+
+# SQLite
+
+## Background
+
+- Most widely deployed database in the world
+- Can be easily embedded into other software
+- Fully self-contained
+- Serverless
+- Reads and writes directly to ordinary disk files
+- Wide range of uses: web browsers, commercial airplanes and WhatsApp.
+
+---
+
+# SQLite
+
+## History
+
+<span >(WHEN and WHERE)
+In the year 2000, Richard Hipp was working for a shipbuilding subsidiary of defense contractor General Dynamic in Maine (US)</span>
+
+(THEN)
+Hipp was building software for a battleship, which would operate on crucial data about the ship’s valves
+
+(PROBLEM)
+The databse which they were using, Informix, stopped working whenever the server went down
+
+(SOLUTION)
+Hipp developed SQLite to solve this problem
+The developed database was very compact, less than 250 kilobytes
+SQLite as we know ito today, implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.
+
+---
+
+# SQLite
+
+## History
+
+Based on **PostgreSQL**
+
+- "_What would PostgreSQL do?_"
+
+#### _KEY DIFFERENCES:_
+
+<div style="text-align:center; margin:auto; justify-content:center; display:flex; font-size:0.68rem">
+
+|              | SQLite                                       | PostgreSQL          |
+| ------------ | -------------------------------------------- | ------------------- |
+| _DBMS_       | Embedded                                     | Client-server model |
+| _Setup size_ | <500 kB                                      | ~200 MB             |
+| _Data Types_ | NULL, BLOB, INTEGER, TEXT, REAL              | Any?                |
+| _etc..._     | Portability, access, functionality, speed... | -                   |
+
+</div>
+
+---
+
+# SQLite
+
+## File format
+
+- Multiple tables, indices, triggers, and views contained in a single disk file.
+- Stable, cross-platform, and backwards compatible
+- SQLite database files are commonly used:
+  - As containers to transfer rich content between systems
+  - As a long-term archival format for data
+- Source code is in the public-domain
 
 # SQLite
 
@@ -76,29 +139,6 @@ style: |
 
 # SQLite
 
-### Design and Architecture Overview
-
-Based on **PostgreSQL**
-
-- "_What would PostgreSQL do?_"
-
-#### _KEY DIFFERENCES:_
-
-<div style="text-align:center; margin:auto; justify-content:center; display:flex; font-size:0.68rem">
-
-|              | SQLite                                       | PostgreSQL          |
-| ------------ | -------------------------------------------- | ------------------- |
-| _DBMS_       | Embedded                                     | Client-server model |
-| _Setup size_ | <500 kB                                      | ~200 MB             |
-| _Data Types_ | NULL, BLOB, INTEGER, TEXT, REAL              | Any?                |
-| _etc..._     | Portability, access, functionality, speed... | -                   |
-
-</div>
-
----
-
-# SQLite
-
 ### Where does it fall on the CAP model?
 
 SQLite = **Consistent** and **Available** - but _not tolerant_ to **Partitions**
@@ -146,8 +186,24 @@ _(Aside - who made this grim diagram?)_
 
 # SQLite
 
-## Use Cases
+## Popularity
 
--
+SQLite is found in:
 
-(WE NEED TO MENTION: EMBEDDED, WRITES DIRECTLY TO DISK , RATHER THAN CLIENT SERVER)
+- Every Android device
+- Every iPhone and iOS device
+- Every Mac
+- Every Windows10 machine
+- Every Firefox, Chrome, and Safari web browser
+- Every instance of Skype
+- Every instance of iTunes
+- Every Dropbox client
+- Every TurboTax and QuickBooks
+- PHP and Python
+- Most television sets and set-top cable boxes
+- Most automotive multimedia systems
+- Countless millions of other applications
+
+It is estimated that there are over one trillion SQLite databases in active use.
+
+---
