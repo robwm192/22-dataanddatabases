@@ -7,6 +7,8 @@ theme: thg-accelerator
 
 # SQLite
 
+## _ ***[ alt intro page ]*** _
+
 ### Ines Cortina, Aarjav Jain, and Rob Woodward-Massey
 
 ![width:100px](img/sqlite-tutorial-homepage.svg)
