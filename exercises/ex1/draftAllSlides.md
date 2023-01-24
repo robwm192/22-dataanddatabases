@@ -22,7 +22,7 @@ style: |
 
 # SQLite
 
-### Background
+## Background
 
 - Most widely deployed database in the world
 - Can be easily embedded into other software
@@ -37,19 +37,25 @@ style: |
 
 ## History
 
-<img src="img/ship.jpeg" height="140rem" style="display:flex; text-align:center; margin:auto; float: right">
+<span >(WHEN and WHERE)
+In the year 2000, Richard Hipp was working for a shipbuilding subsidiary of defense contractor General Dynamic in Maine (US)</span>
 
-- Developed by Richard Hipp in the year 2000
-- As an alternative to Informix
-- To store data used on a battleship
-- The result was a very compact database, less than 250 kilobytes
-<!-- - SQLite as we know ito today, implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine. -->
+(THEN)
+Hipp was building software for a battleship, which would operate on crucial data about the ship’s valves
+
+(PROBLEM)
+The databse which they were using, Informix, stopped working whenever the server went down
+
+(SOLUTION)
+Hipp developed SQLite to solve this problem
+The developed database was very compact, less than 250 kilobytes
+SQLite as we know ito today, implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.
 
 ---
 
 # SQLite
 
-### History
+## History
 
 Based on **PostgreSQL**
 
@@ -72,12 +78,12 @@ Based on **PostgreSQL**
 
 # SQLite
 
-### File format
+## File format
 
-- Multiple tables, indices, triggers, and views contained in a single disk file
+- Multiple tables, indices, triggers, and views contained in a single disk file.
 - Stable, cross-platform, and backwards compatible
 - SQLite database files are commonly used:
-  - As containers to transfer content between systems
+  - As containers to transfer rich content between systems
   - As a long-term archival format for data
 - Source code is in the public-domain
 
@@ -99,7 +105,7 @@ Based on **PostgreSQL**
 
 **Serverless** - Not client-server, but an _embedded_ database
 
-![width:800px](img/sqliteDiagram.jpg)
+![width:600px](img/sqliteDiagram.jpg)
 
 ---
 
@@ -155,7 +161,7 @@ _(Aside - who made this grim diagram?)_
 
 ### Lightweight & Portable
 
-- So used as embedded software with TVs, phones, cameras, home electronics etc
+- So used as embedded software with TVs, phones, cameras, home electronics etc.
 - Fast & only overwrites edited parts of file
 - Compatible with all programming languages
 - Open source
