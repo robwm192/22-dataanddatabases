@@ -3,11 +3,24 @@ marp: true
 theme: thg-accelerator
 footer: "![](img/accelerator-logo.svg)"
 style: |
-  img[alt~="centre"] {
+  img[alt~="new1"] {
     display: block;
     margin: 0 auto;
     font-size: 18px;
     indent: 0 auto;
+    float: right;
+  },
+  img[alt~="new2"] {
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    indent: 0 auto;
+    float: right;
+
+    margin-bottom: 20px;
+    margin-right: 0;
+    text-align: left;
+    word-wrap: break-word;
   }
 ---
 
@@ -16,7 +29,8 @@ style: |
 ### Ines Cortina, Aarjav Jain, and Rob Woodward-Massey
 
 </br>
-<img src="img/sqlite-tutorial-homepage.svg" height="180rem" style="display:flex; text-align:center; margin:auto">
+
+![width:666px new1](img/sqlite-tutorial-homepage.svg)
 
 ---
 
@@ -37,13 +51,11 @@ style: |
 
 ## History
 
-<img src="img/ship.jpeg" height="140rem" style="display:flex; text-align:center; margin:auto; float: right">
-
 - Developed by Richard Hipp in the year 2000
 - As an alternative to Informix
-- To store data used on a battleship
-- The result was a very compact database, less than 250 kilobytes
-<!-- - SQLite as we know ito today, implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine. -->
+  ![width:600px new2](img/ship.jpeg)
+- Built to store data used on a battleship
+- The result was a very compact database, < 250 kilobytes
 
 ---
 
@@ -57,7 +69,7 @@ Based on **PostgreSQL**
 
 #### _KEY DIFFERENCES:_
 
-<div style="text-align:center; margin:auto; justify-content:center; display:flex; font-size:0.68rem">
+<!-- <div style=!"text-align:center; margin:auto; justify-content:center; display:flex; font-size:0.68rem"> -->
 
 |              | SQLite                                       | PostgreSQL          |
 | ------------ | -------------------------------------------- | ------------------- |
@@ -66,7 +78,7 @@ Based on **PostgreSQL**
 | _Data Types_ | NULL, BLOB, INTEGER, TEXT, REAL              | Any?                |
 | _etc..._     | Portability, access, functionality, speed... | -                   |
 
-</div>
+<!-- </div> -->
 
 ---
 
