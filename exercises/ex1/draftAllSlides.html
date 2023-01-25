@@ -368,10 +368,10 @@ code {
 <h1 id="sqlite">SQLite</h1>
 <h3 id="ines-cortina-aarjav-jain-and-rob-woodward-massey">Ines Cortina, Aarjav Jain, and Rob Woodward-Massey</h3>
 </br>
-<img src="img/sqlite-tutorial-homepage.svg" height="180rem" style="display:flex; text-align:center; margin:auto">
+<p><img src="img/sqlite-tutorial-homepage.svg" alt="width:666px new1"></p>
 <hr>
 <h1 id="sqlite">SQLite</h1>
-<h2 id="background">Background</h2>
+<h3 id="background">Background</h3>
 <ul>
 <li>Most widely deployed database in the world</li>
 <li>Can be easily embedded into other software</li>
@@ -381,27 +381,18 @@ code {
 <li>Wide range of uses: web browsers, commercial airplanes and WhatsApp.</li>
 </ul>
 <hr>
-<h1 id="sqlite">SQLite</h1>
-<h2 id="history">History</h2>
-<p><span >(WHEN and WHERE)<br>
-In the year 2000, Richard Hipp was working for a shipbuilding subsidiary of defense contractor General Dynamic in Maine (US)</span></p>
-<p>(THEN)<br>
-Hipp was building software for a battleship, which would operate on crucial data about the ship’s valves</p>
-<p>(PROBLEM)<br>
-The databse which they were using, Informix, stopped working whenever the server went down</p>
-<p>(SOLUTION)<br>
-Hipp developed SQLite to solve this problem<br>
-The developed database was very compact, less than 250 kilobytes<br>
-SQLite as we know ito today, implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.</p>
-<hr>
-<h1 id="sqlite">SQLite</h1>
-<h2 id="history">History</h2>
-<p>Based on <strong>PostgreSQL</strong></p>
+<h3 id="history">History</h3>
 <ul>
-<li>&quot;<em>What would PostgreSQL do?</em>&quot;</li>
+<li>Developed by Richard Hipp in the year 2000</li>
+<li>As an alternative to Informix<br>
+<img src="img/ship.jpeg" alt="width:600px new2"></li>
+<li>Built to store data used on a battleship</li>
+<li>The result was a very compact database, &lt; 250 kilobytes</li>
 </ul>
-<h4 id="key-differences"><em>KEY DIFFERENCES:</em></h4>
-<div style="text-align:center; margin:auto; justify-content:center; display:flex; font-size:0.68rem">
+<hr>
+<h3 id="history">History</h3>
+<p>Based on <strong>PostgreSQL</strong> - &quot;<em>What would PostgreSQL do?</em>&quot;</p>
+<h5 id="key-differences"><em>KEY DIFFERENCES:</em></h5>
 <table>
 <thead>
 <tr>
@@ -433,35 +424,39 @@ SQLite as we know ito today, implements a small, fast, self-contained, high-reli
 </tr>
 </tbody>
 </table>
-</div>
 <hr>
 <h1 id="sqlite">SQLite</h1>
-<h2 id="file-format">File format</h2>
+<h3 id="file-format">File format</h3>
 <ul>
-<li>Multiple tables, indices, triggers, and views contained in a single disk file.</li>
+<li>Multiple tables, indices, triggers, and views contained in a single disk file</li>
 <li>Stable, cross-platform, and backwards compatible</li>
 <li>SQLite database files are commonly used:
 <ul>
-<li>As containers to transfer rich content between systems</li>
+<li>As containers to transfer content between systems</li>
 <li>As a long-term archival format for data</li>
 </ul>
 </li>
 <li>Source code is in the public-domain</li>
 </ul>
-<h1 id="sqlite">SQLite</h1>
-<h3 id="design-and-architecture-overview">Design and Architecture Overview</h3>
-<ul>
-<li>&quot;<strong>SQLite</strong> is a <strong>C-language</strong> library that implements a <strong>small, fast, self-contained, high-reliability, full-featured, SQL database engine</strong>&quot;<br>
-<br/></li>
-<li>&quot;The SQLite file format is <strong>stable, cross-platform, and backwards compatible</strong>&quot;<br>
-<br/><div align='right', style="font-size: 1rem"><p><i>-- from sqlite.org</i></p></div>
-</li>
-</ul>
 <hr>
 <h1 id="sqlite">SQLite</h1>
 <h3 id="design-and-architecture-overview">Design and Architecture Overview</h3>
+<ul>
+<li>
+<p>&quot;<strong>SQLite</strong> is a <strong>C-language</strong> library that implements a <strong>small, fast, self-contained, high-reliability, full-featured, SQL database engine</strong>&quot;<br>
+<br/></p>
+</li>
+<li>
+<p>&quot;The SQLite file format is <strong>stable, cross-platform, and backwards compatible</strong>&quot;<br>
+<br/></p>
+<p>                                                                                                              - <em>from sqlite.org</em></p>
+</li>
+</ul>
+<hr>
+<h3 id="design-and-architecture-overview">Design and Architecture Overview</h3>
 <p><strong>Serverless</strong> - Not client-server, but an <em>embedded</em> database</p>
-<p><img src="img/sqliteDiagram.jpg" alt="width:600px"></p>
+</br>
+<p><img src="img/sqliteDiagram.jpg" alt="width:800px new3"></p>
 <hr>
 <h1 id="sqlite">SQLite</h1>
 <h3 id="design-and-architecture-overview">Design and Architecture Overview</h3>
@@ -480,7 +475,6 @@ SQLite as we know ito today, implements a small, fast, self-contained, high-reli
 </li>
 </ul>
 <hr>
-<h1 id="sqlite">SQLite</h1>
 <h3 id="design-and-architecture-overview---acid">Design and Architecture Overview - ACID</h3>
 <ul>
 <li><strong>Atomic</strong>
@@ -505,22 +499,16 @@ SQLite as we know ito today, implements a small, fast, self-contained, high-reli
 </li>
 </ul>
 <hr>
-<h1 id="sqlite">SQLite</h1>
-<h3 id="where-does-it-fall-on-the-cap-model">Where does it fall on the CAP model?</h3>
+<h1 id="where-does-it-fall-on-the-cap-model">Where does it fall on the CAP model?</h1>
 <p>SQLite = <strong>Consistent</strong> and <strong>Available</strong> - but <em>not tolerant</em> to <strong>Partitions</strong></p>
-<div style="font-size:1.2rem; padding-left:2.7rem;font-style:italic">  
--->> SQLite = CA
-</div>
-</br>
-</br>
-<p><em>(Aside - who made this grim diagram?)</em><br>
-<img src="img/SQLiteCAP.png" height="300rem" style="position:relative; left:140px; bottom: 80px; justify-content:right"></p>
+<h3 id="sqlite--ca">                    --&gt;&gt;     SQLite = CA</h3>
+<br/>
+<p>          <em>(Aside - who made this grim diagram?)</em> <img src="img/SQLiteCAP.png" alt="width:400px new4"></p>
 <hr>
-<h1 id="sqlite">SQLite</h1>
 <h2 id="pros-and-cons">Pros and Cons</h2>
 <h3 id="lightweight--portable">Lightweight &amp; Portable</h3>
 <ul>
-<li>So used as embedded software with TVs, phones, cameras, home electronics etc.</li>
+<li>So used as embedded software with TVs, phones, cameras, home electronics etc</li>
 <li>Fast &amp; only overwrites edited parts of file</li>
 <li>Compatible with all programming languages</li>
 <li>Open source</li>
@@ -539,9 +527,7 @@ SQLite as we know ito today, implements a small, fast, self-contained, high-reli
 <li>Not suitable if concurrency required: unlimited readers, one writer, rest queue up</li>
 </ul>
 <hr>
-<h1 id="sqlite">SQLite</h1>
-<h2 id="popularity">Popularity</h2>
-<p>SQLite is found in:</p>
+<h2 id="popularity---sqlite-is-found-in">Popularity - SQLite is found in:</h2>
 <ul>
 <li>Every Android device</li>
 <li>Every iPhone and iOS device</li>
@@ -552,13 +538,17 @@ SQLite as we know ito today, implements a small, fast, self-contained, high-reli
 <li>Every instance of iTunes</li>
 <li>Every Dropbox client</li>
 <li>Every TurboTax and QuickBooks</li>
+</ul>
+<hr>
+<h2 id="popularity---cont">Popularity - cont.</h2>
+<ul>
 <li>PHP and Python</li>
 <li>Most television sets and set-top cable boxes</li>
 <li>Most automotive multimedia systems</li>
 <li>Countless millions of other applications</li>
 </ul>
-<p>It is estimated that there are over one trillion SQLite databases in active use.</p>
-<hr>
+<br/>
+<h2 id="it-is-estimated-that-there-are-over-one-trillion-sqlite-databases-in-active-use">It is estimated that there are over one trillion SQLite databases in active use!</h2>
 
 </body>
 </html>

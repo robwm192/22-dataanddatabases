@@ -3,11 +3,43 @@ marp: true
 theme: thg-accelerator
 footer: "![](img/accelerator-logo.svg)"
 style: |
-  img[alt~="centre"] {
+  img[alt~="new1"] {
     display: block;
     margin: 0 auto;
     font-size: 18px;
     indent: 0 auto;
+    float: right;
+  },
+  img[alt~="new2"] {
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    indent: 0 auto;
+    float: right;
+
+    margin-bottom: 20px;
+    margin-right: 0;
+    text-align: left;
+    word-wrap: break-word;
+  },
+  img[alt~="new3"] {
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    indent: 0 auto;
+    float: center;
+  },
+  img[alt~="new4"] {
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    indent: 0 auto;
+    float: right;
+
+    margin-bottom: 40px;
+    margin-right: 0;
+    text-align: left;
+    word-wrap: break-word;
   }
 ---
 
@@ -16,13 +48,14 @@ style: |
 ### Ines Cortina, Aarjav Jain, and Rob Woodward-Massey
 
 </br>
-<img src="img/sqlite-tutorial-homepage.svg" height="180rem" style="display:flex; text-align:center; margin:auto">
+
+![width:666px new1](img/sqlite-tutorial-homepage.svg)
 
 ---
 
 # SQLite
 
-## Background
+### Background
 
 - Most widely deployed database in the world
 - Can be easily embedded into other software
@@ -33,37 +66,21 @@ style: |
 
 ---
 
-# SQLite
+### History
 
-## History
-
-<span >(WHEN and WHERE)
-In the year 2000, Richard Hipp was working for a shipbuilding subsidiary of defense contractor General Dynamic in Maine (US)</span>
-
-(THEN)
-Hipp was building software for a battleship, which would operate on crucial data about the ship’s valves
-
-(PROBLEM)
-The databse which they were using, Informix, stopped working whenever the server went down
-
-(SOLUTION)
-Hipp developed SQLite to solve this problem
-The developed database was very compact, less than 250 kilobytes
-SQLite as we know ito today, implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.
+- Developed by Richard Hipp in the year 2000
+- As an alternative to Informix
+  ![width:600px new2](img/ship.jpeg)
+- Built to store data used on a battleship
+- The result was a very compact database, < 250 kilobytes
 
 ---
 
-# SQLite
+### History
 
-## History
+Based on **PostgreSQL** - "_What would PostgreSQL do?_"
 
-Based on **PostgreSQL**
-
-- "_What would PostgreSQL do?_"
-
-#### _KEY DIFFERENCES:_
-
-<div style="text-align:center; margin:auto; justify-content:center; display:flex; font-size:0.68rem">
+##### _KEY DIFFERENCES:_
 
 |              | SQLite                                       | PostgreSQL          |
 | ------------ | -------------------------------------------- | ------------------- |
@@ -72,20 +89,20 @@ Based on **PostgreSQL**
 | _Data Types_ | NULL, BLOB, INTEGER, TEXT, REAL              | Any?                |
 | _etc..._     | Portability, access, functionality, speed... | -                   |
 
-</div>
-
 ---
 
 # SQLite
 
-## File format
+### File format
 
-- Multiple tables, indices, triggers, and views contained in a single disk file.
+- Multiple tables, indices, triggers, and views contained in a single disk file
 - Stable, cross-platform, and backwards compatible
 - SQLite database files are commonly used:
-  - As containers to transfer rich content between systems
+  - As containers to transfer content between systems
   - As a long-term archival format for data
 - Source code is in the public-domain
+
+---
 
 # SQLite
 
@@ -94,18 +111,19 @@ Based on **PostgreSQL**
 - "**SQLite** is a **C-language** library that implements a **small, fast, self-contained, high-reliability, full-featured, SQL database engine**"
   <br/>
 - "The SQLite file format is **stable, cross-platform, and backwards compatible**"
-<br/>
-  <div align='right', style="font-size: 1rem"><p><i>-- from sqlite.org</i></p></div>
+  <br/>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _from sqlite.org_
 
 ---
-
-# SQLite
 
 ### Design and Architecture Overview
 
 **Serverless** - Not client-server, but an _embedded_ database
 
-![width:600px](img/sqliteDiagram.jpg)
+</br>
+
+![width:800px new3](img/sqliteDiagram.jpg)
 
 ---
 
@@ -122,8 +140,6 @@ Based on **PostgreSQL**
 
 ---
 
-# SQLite
-
 ### Design and Architecture Overview - ACID
 
 - **Atomic**
@@ -137,31 +153,23 @@ Based on **PostgreSQL**
 
 ---
 
-# SQLite
-
-### Where does it fall on the CAP model?
+# Where does it fall on the CAP model?
 
 SQLite = **Consistent** and **Available** - but _not tolerant_ to **Partitions**
 
-<div style="font-size:1.2rem; padding-left:2.7rem;font-style:italic">  
--->> SQLite = CA
-</div>
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->>&nbsp;&nbsp;&nbsp;&nbsp; SQLite = CA
 
-</br>
-</br>
+<br/>
 
-_(Aside - who made this grim diagram?)_
-<img src="img/SQLiteCAP.png" height="300rem" style="position:relative; left:140px; bottom: 80px; justify-content:right">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_(Aside - who made this grim diagram?)_ ![width:400px new4](img/SQLiteCAP.png)
 
 ---
-
-# SQLite
 
 ## Pros and Cons
 
 ### Lightweight & Portable
 
-- So used as embedded software with TVs, phones, cameras, home electronics etc.
+- So used as embedded software with TVs, phones, cameras, home electronics etc
 - Fast & only overwrites edited parts of file
 - Compatible with all programming languages
 - Open source
@@ -184,11 +192,7 @@ _(Aside - who made this grim diagram?)_
 
 ---
 
-# SQLite
-
-## Popularity
-
-SQLite is found in:
+## Popularity - SQLite is found in:
 
 - Every Android device
 - Every iPhone and iOS device
@@ -199,11 +203,16 @@ SQLite is found in:
 - Every instance of iTunes
 - Every Dropbox client
 - Every TurboTax and QuickBooks
+
+---
+
+## Popularity - cont.
+
 - PHP and Python
 - Most television sets and set-top cable boxes
 - Most automotive multimedia systems
 - Countless millions of other applications
 
-It is estimated that there are over one trillion SQLite databases in active use.
+<br/>
 
----
+## It is estimated that there are over one trillion SQLite databases in active use!
