@@ -21,6 +21,25 @@ style: |
     margin-right: 0;
     text-align: left;
     word-wrap: break-word;
+  },
+  img[alt~="new3"] {
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    indent: 0 auto;
+    float: center;
+  },
+  img[alt~="new4"] {
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    indent: 0 auto;
+    float: right;
+
+    margin-bottom: 40px;
+    margin-right: 0;
+    text-align: left;
+    word-wrap: break-word;
   }
 ---
 
@@ -47,9 +66,7 @@ style: |
 
 ---
 
-# SQLite
-
-## History
+### History
 
 - Developed by Richard Hipp in the year 2000
 - As an alternative to Informix
@@ -59,17 +76,11 @@ style: |
 
 ---
 
-# SQLite
-
 ### History
 
-Based on **PostgreSQL**
+Based on **PostgreSQL** - "_What would PostgreSQL do?_"
 
-- "_What would PostgreSQL do?_"
-
-#### _KEY DIFFERENCES:_
-
-<!-- <div style=!"text-align:center; margin:auto; justify-content:center; display:flex; font-size:0.68rem"> -->
+##### _KEY DIFFERENCES:_
 
 |              | SQLite                                       | PostgreSQL          |
 | ------------ | -------------------------------------------- | ------------------- |
@@ -77,8 +88,6 @@ Based on **PostgreSQL**
 | _Setup size_ | <500 kB                                      | ~200 MB             |
 | _Data Types_ | NULL, BLOB, INTEGER, TEXT, REAL              | Any?                |
 | _etc..._     | Portability, access, functionality, speed... | -                   |
-
-<!-- </div> -->
 
 ---
 
@@ -93,6 +102,8 @@ Based on **PostgreSQL**
   - As a long-term archival format for data
 - Source code is in the public-domain
 
+---
+
 # SQLite
 
 ### Design and Architecture Overview
@@ -100,18 +111,19 @@ Based on **PostgreSQL**
 - "**SQLite** is a **C-language** library that implements a **small, fast, self-contained, high-reliability, full-featured, SQL database engine**"
   <br/>
 - "The SQLite file format is **stable, cross-platform, and backwards compatible**"
-<br/>
-  <div align='right', style="font-size: 1rem"><p><i>-- from sqlite.org</i></p></div>
+  <br/>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _from sqlite.org_
 
 ---
-
-# SQLite
 
 ### Design and Architecture Overview
 
 **Serverless** - Not client-server, but an _embedded_ database
 
-![width:800px](img/sqliteDiagram.jpg)
+</br>
+
+![width:800px new3](img/sqliteDiagram.jpg)
 
 ---
 
@@ -128,8 +140,6 @@ Based on **PostgreSQL**
 
 ---
 
-# SQLite
-
 ### Design and Architecture Overview - ACID
 
 - **Atomic**
@@ -143,25 +153,17 @@ Based on **PostgreSQL**
 
 ---
 
-# SQLite
-
-### Where does it fall on the CAP model?
+# Where does it fall on the CAP model?
 
 SQLite = **Consistent** and **Available** - but _not tolerant_ to **Partitions**
 
-<div style="font-size:1.2rem; padding-left:2.7rem;font-style:italic">  
--->> SQLite = CA
-</div>
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->>&nbsp;&nbsp;&nbsp;&nbsp; SQLite = CA
 
-</br>
-</br>
+<br/>
 
-_(Aside - who made this grim diagram?)_
-<img src="img/SQLiteCAP.png" height="300rem" style="position:relative; left:140px; bottom: 80px; justify-content:right">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_(Aside - who made this grim diagram?)_ ![width:400px new4](img/SQLiteCAP.png)
 
 ---
-
-# SQLite
 
 ## Pros and Cons
 
@@ -190,11 +192,7 @@ _(Aside - who made this grim diagram?)_
 
 ---
 
-# SQLite
-
-## Popularity
-
-SQLite is found in:
+## Popularity - SQLite is found in:
 
 - Every Android device
 - Every iPhone and iOS device
@@ -205,11 +203,16 @@ SQLite is found in:
 - Every instance of iTunes
 - Every Dropbox client
 - Every TurboTax and QuickBooks
+
+---
+
+## Popularity - cont.
+
 - PHP and Python
 - Most television sets and set-top cable boxes
 - Most automotive multimedia systems
 - Countless millions of other applications
 
-It is estimated that there are over one trillion SQLite databases in active use.
+<br/>
 
----
+## It is estimated that there are over one trillion SQLite databases in active use!
